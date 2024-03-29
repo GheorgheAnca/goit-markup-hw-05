@@ -170,6 +170,51 @@ li {
 
 
 /* main-section-content */
+.modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1600px;
+        height: 1024px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+        visibility: hidden;
+}
+
+.modal-content {
+        width: 528px;
+        height: 581px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        margin-bottom: 222px;
+        text-align: center;
+}
+
+.close-btn {
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+        margin-right: 8px;
+        left: 1026px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        font-size: 23px;
+        text-align: center;
+} 
 
 h1 {
         text-align: center;
@@ -197,6 +242,7 @@ h1 {
         align-items: center;
     }
 
+
 .button-service {
         border-radius: 4px;
         background-color: rgba(33, 150, 243, 1);
@@ -207,12 +253,15 @@ h1 {
         border-radius: 4px;
         background: #2196F3;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-service:hover, .button-service:focus {
         background-color: #1572bf; 
         color: rgba(255, 255, 255, 1);
         cursor: pointer;
 }
+
+/* portfolio */
 .button-list {
         display: flex;
         flex-direction: row;
@@ -222,6 +271,8 @@ h1 {
         gap: 10px;
 
 }
+
+
 .button-service-p{
         height: 38px ;
         margin-top:0px;
