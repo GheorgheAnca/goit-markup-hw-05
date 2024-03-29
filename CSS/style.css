@@ -472,6 +472,26 @@ h3 {
         flex-basis: calc((100% - 10px) / 3);
         justify-content: center;
 }
+
+.overlay-text {
+        position: absolute;
+        margin-left: 185px;
+        margin-top: -40px;
+        transform: translate(-50%, -50%);
+        background: #2f303acc;
+        color: #fff;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        width: 370px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 .social-link{
         display: flex;
         flex-wrap: wrap;
